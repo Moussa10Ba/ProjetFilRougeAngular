@@ -1,0 +1,28 @@
+.login-form-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.button-flex-container {
+  display: flex;
+  width: 100%;
+  min-width: 500px;
+  justify-content: center;
+}
+.champs{
+  margin-left: 30%;
+}
+.container{
+  background-image: url("src/assets/bg.png");
+  height: 100%;
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: center;
+}
+
+
+
+

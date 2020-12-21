@@ -1,0 +1,22 @@
+{
+  "profils" : [
+    {
+    "id" : 1 ,
+    "libelle" : "ADMIN"
+
+  },
+    {
+      "id" : 2 ,
+      "libelle" : "Formateur"
+    },
+    {
+      "id": 3,
+      "libelle": "CM"
+    },
+    {
+      "id": 4,
+      "libelle": "Apprenant"
+    }
+  ]
+}
+

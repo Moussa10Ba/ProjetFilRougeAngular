@@ -1,0 +1,18 @@
+table {
+  width : 50%;
+  height: 20%;
+  float: right;
+}
+
+.addButton{
+  float: left;
+  margin-left: 42%;
+  color: aqua;
+
+}
+
+listeUsersByProfil{
+  background-color: aqua;
+  width: 10%;
+}
+

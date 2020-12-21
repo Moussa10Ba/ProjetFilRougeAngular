@@ -1,0 +1,16 @@
+<div layout="row">
+<form [formGroup]="ProfilForm" (ngSubmit)="Onsubmit()">
+  <mat-card>
+    <mat-card-title> Ajouter Un Nouveau Profil</mat-card-title>
+    <mat-card-content>
+      <mat-form-field>
+        <input matInput placeholder="Libelle" formControlName="libelle" maxlength="5" minlength="4">
+      </mat-form-field>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-flat-button color="warn" type="submit">Ajouter</button>
+    </mat-card-actions>
+  </mat-card>
+
+</form>
+</div>
