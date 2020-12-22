@@ -13,7 +13,10 @@ import {Observable} from 'rxjs';
 export class ProfilComponent implements OnInit {
   profils: Profils[] = [];
   displayedColumns  = ['id', 'libelle', 'archive', 'edit', 'delete', 'users'];
+  displayedColumsUsers = ['id', 'nom', 'prenom', 'login', 'email', 'photo'];
   utilisateurs: any = [];
+  ok = false;
+  usersdataSource = this.utilisateurs;
   constructor(private profilservice: ProfilService) {
   }
   dataSource = this.profilservice.getProfils();
@@ -32,10 +35,12 @@ export class ProfilComponent implements OnInit {
     );
   }
   // tslint:disable-next-line:typedef
-  onListeUsersProfil(row: any){
-    this.profilservice.getUsersByProfil(row.id).subscribe(
+  onListeUsersProfil(id: number){
+    this.profilservice.getUsersByProfil(id).subscribe(
       users => {
-        return this.utilisateurs = users;
+        this.utilisateurs = users;
+        console.log(this.utilisateurs);
+        return this.utilisateurs;
       },
       error => alert('error')
     );

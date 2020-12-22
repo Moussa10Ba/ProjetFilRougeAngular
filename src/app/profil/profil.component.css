@@ -15,4 +15,13 @@ listeUsersByProfil{
   background-color: aqua;
   width: 10%;
 }
+.ContainerUserByProfi{
+  float: left;
+  width: 45%;
+  background-color: red;
+}
+.tableUserByProfil{
+  width: 100%;
+  background-color: yellow;
+}
 
